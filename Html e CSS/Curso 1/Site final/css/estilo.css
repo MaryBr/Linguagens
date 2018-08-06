@@ -149,7 +149,7 @@ h1.logo
 }
 .menu
 {
-    text-transform: uppercase;
+    text-transform: uppercase;/*letras maiúsculas*/
     text-align: right;
     margin-top: 25px;
 }
