@@ -129,12 +129,14 @@ img
 {
     text-transform: uppercase;
     text-align: right;
-    margin-top: 35px;
+    margin-top: 40px;	
 }
 .menu li a
 {
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 3px;
+	text-decoration: none;
+	color: #483D8B;
 }
 .menu li a:hover
 {
@@ -142,12 +144,15 @@ img
     background: #00008B;
     color: #FFFFFF;
 }
-h1.logo
+.logo a
 {
-    font-weight: 450;
+    font-weight: 400;
+	color: #191970;
     letter-spacing: -2px;
+	text-decoration:none;
 }
 
+}	*/
 .fundo
 {
     /*background: #D3D3D3;*/
@@ -160,4 +165,8 @@ h1.logo
     color:#ebebeb;
     text-align: center;
     font-weight: 200;
+}
+p
+{
+	text-align: justify;
 }
