@@ -1,6 +1,6 @@
 body
 {
-	font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
     color: #483D8B;
 }
 a:link a:active, a:visited
@@ -129,12 +129,14 @@ img
 {
     text-transform: uppercase;
     text-align: right;
-    margin-top: 35px;
+    margin-top: 40px;   
 }
 .menu li a
 {
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 3px;
+    text-decoration: none;
+    color: #483D8B;
 }
 .menu li a:hover
 {
@@ -142,18 +144,60 @@ img
     background: #00008B;
     color: #FFFFFF;
 }
-h1.logo
+.logo a
 {
-    font-weight: 450;
+    font-weight: 400;
+    color: #191970;
     letter-spacing: -2px;
+    text-decoration:none;
 }
 
+}   */
 .fundo
 {
     /*background: #D3D3D3;*/
     background: url(https://2f4u.fansubs.com.br/wp-content/uploads/2017/07/site-background.jpg);
     background-size: cover;
 }
+.fundoCidade
+{
+    /*background: #D3D3D3*/
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG); 
+    /*background: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG);*/
+    background-size: cover; /*imagem ocupa toda a tela*/
+ 
+   /background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/
+    /*filter: opacity(15%);*/
+     
+     color: #000000;
+}
+p
+{
+    text-align: justify;
+}
+
+.texto
+{
+    width: auto;
+    margin: auto;
+    background: #F8F8F8;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.fundoT
+{
+    /*background: #D3D3D3*/
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(http://mondego.com.br/wp-content/uploads/2014/05/roteiro-das-igrejas.jpg); 
+    /*background: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG);*/
+    background-size: cover; /*imagem ocupa toda a tela*/
+ 
+   /background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/
+    /*filter: opacity(15%);*/
+     
+     color: #000000;
+}
+
+
 .footer
 {
     background: #483D8B;
