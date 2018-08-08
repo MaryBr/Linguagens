@@ -1,0 +1,51 @@
+*{
+	margin: 0; /*margem externa*/
+	padding: 0; /*espaçamento da parte interna*/
+	font-family: arial;
+}
+.principal
+{
+	background-color: gray;
+	width: 1200px;
+	margin:auto; /*posição do objeto na tela*/
+	margin-top: 20px;
+	padding: 10px;
+}
+header
+{
+	background-color: #fff;
+	width: 1200px;
+	height: 200px;
+}
+nav{
+	background-color: #fff;
+	margin-top: 10px;
+	width: 1200px;
+	height: 50px;
+}
+section
+{
+	background-color: #fff;
+	margin-top: 10px;
+	width: 900px;
+	height: 500px;
+	float: left;
+}
+aside
+{
+	background-color: #fff;
+	width: 290px;
+	margin-top: 10px;
+	height: 500px;
+	float:left;
+	margin-left: 10px;
+	margin-bottom: 10px; /*empurra o rodapé para baixo só pq tinha problema cm o clear*/
+}
+footer
+{
+	background-color: #fff;
+	width: 1200px;
+	height: 60px;
+	clear: both;/*limpa a flutuação*/
+
+}
