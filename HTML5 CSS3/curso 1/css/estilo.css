@@ -49,3 +49,19 @@ footer
 	clear: both;/*limpa a flutuação*/
 
 }
+@media screen and (max-width: 500px) /*quando a tela do usuário estiver até 500 algo será alterado*/
+{
+	nav
+	{
+		background-color: green;
+
+	}
+	aside
+	{
+		display: none;
+	}
+	section
+	{
+		width: 100%;/*aside some e a section ocupa todo o espaço*/
+	}
+}
