@@ -164,11 +164,7 @@ img
     padding: 2px;
     float: left;
 }
-/*.titulo
-{
-    font-size: 15px;
-    text-align: center;
-}*/
+
 /*Laypout do site*/
 
 .header
@@ -176,32 +172,69 @@ img
     background: #FFA500;
 }
 
-.menu
-{
-    text-transform: uppercase;
-    text-align: right;
-    margin-top: 40px;   
-    margin-top: 40px;	
-
+/*---MENU Drop---*/
+.navBar {
+  overflow: hidden;
+  background-color: #FFA500;
+  margin-top: 45px; 
 }
-.menu li a
-{
-    padding: 5px 5px;
-    border-radius: 3px;
-
-    text-decoration: none;
-    color: #483D8B;
-
-	text-decoration: none;
-	color: #483D8B;
-
+.navBar a {
+  float: left;
+ 
+  text-transform: uppercase;
+  color: #483D8B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.menu li a:hover
-{
-    text-decoration: none;
-    background: #00008B;
-    color: #FFFFFF;
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
+
+.dropdown .dropbtm {
+ 
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #483D8B;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.navBar a:hover, .dropdown:hover .dropbtm {
+  text-decoration: none;
+   background: #00008B;
+   color: #FFFFFF;
+}
+.conteudo_dropdown {
+    display: none;
+    position: absolute;
+    background-color: #FFA500;  
+    border:1px solid #000000 ; /*borda que envolve todo o dropdown*/
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.conteudo_dropdown a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;/*sublinhado*/
+  display: block;
+  text-align: left;
+}
+.conteudo_dropdown a:hover {
+  background-color: #00008B;
+}
+.dropdown:hover .conteudo_dropdown {
+  display: block;
+}
+
+
 .fundo ul li a:hover
 {
 	text-decoration: underline;
@@ -214,23 +247,18 @@ img
     text-decoration:none;
 }
 
-/*.fundo
+.fundo
 {
-    /*background: #D3D3D3;
+    background: #D3D3D3;
     background: url(https://2f4u.fansubs.com.br/wp-content/uploads/2017/07/site-background.jpg);
     background-size: cover;
-}*/
+}
 .fundoCidade
 {
-    /*background: #D3D3D3*/
     background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG); 
-    /*background: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG);*/
     background-size: cover; /*imagem ocupa toda a tela*/
- 
-   /background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/
-    /*filter: opacity(15%);*/
-     
-     color: #000000;
+    background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/
+    color: #000000;
 }
 p
 {
@@ -247,15 +275,11 @@ p
 }
 .fundoT
 {
-    /*background: #D3D3D3*/
+   
     background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url(http://mondego.com.br/wp-content/uploads/2014/05/roteiro-das-igrejas.jpg); 
-    /*background: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Ouro_Preto%2C_Minas_Gerais%2C_Brasil_2.JPG);*/
     background-size: cover; /*imagem ocupa toda a tela*/
- 
-   /background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/
-    /*filter: opacity(15%);*/
-     
-     color: #000000;
+    background-attachment: fixed;/*a imagem fica fixa ao dar scroll na tela*/    
+    color: #000000;
 }
 
 
