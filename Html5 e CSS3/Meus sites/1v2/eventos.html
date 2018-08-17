@@ -8,15 +8,46 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400" rel="stylesheet">
         <link rel="icon" type="text/css" href="http://www.artebandeiras.com.br/files/produtos/produto_1355832856.jpg">
+
+        <script>
+			 function showTimer() {
+			  var time=new Date();
+			  var hour=time.getHours();
+			  var minute=time.getMinutes();
+			  var second=time.getSeconds();
+			  if(hour<10)   hour  ="0"+hour;
+			  if(minute<10) minute="0"+minute;
+			  if(second<10) second="0"+second;
+			  var st=hour+":"+minute+":"+second;
+			  document.getElementById("timer").innerHTML=st; 
+			 }
+			 function initTimer() {
+			  // O metodo nativo setInterval executa uma determinada funcao em um determinado tempo  
+			  setInterval(showTimer,1000);
+			 }
+		</script>
     </head>
     
-    <body>      
+    <body onLoad="initTimer();" >      
        <div class="header">
 			<header>
 				<div class=" logo">
 					<h1 title= "Pagina Inicial"><a href="index.html">Ouro Preto <br> Minas Gerais </a></h1>	
 				</div>
 			</header>
+
+			<div id="data">
+				<script>
+					 dayName = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
+					monName = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto", "Setembro","Outubro", "Novembro", "Dezembro")
+					now = new Date					
+					
+					document.write ("<h4>" + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </h4>")
+				</script>
+			</div>
+
+			<span id="timer">Relógio</span>	
+
 			<div class=" navBar">						
 				<a href="cidade.html">A cidade</a>
 				<a href="turismo.html">Turismo</a>
