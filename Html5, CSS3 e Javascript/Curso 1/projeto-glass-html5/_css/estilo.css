@@ -11,7 +11,7 @@ div#interface
 	width: 900px;
 	background-color: white;
 	margin:-20px auto 0px auto /* cima, direita, baixo, esquerda*/ 
-	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* deslocamento lateral, vertical, espalhamento da sombra, cor da sombra */;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* deslocamento lateral, vertical, espalhamento da sombra, cor da sombra */
 	padding: 10px; /*padding: 10px 10px 10px 10px = padding: 10px*/
 }
 
