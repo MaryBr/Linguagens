@@ -3,6 +3,7 @@
 
 body
 {
+	font-family: ARIAL;
 	background-color: #dddddd;
 	color: rgba(0,0,0,1);
 }
@@ -20,7 +21,14 @@ p
 	text-align: justify;
 	text-indent: 50px;/* criação do parágrafo*/
 }
-
+a{
+	color: #606060;
+	text-decoration:none;/*tira o sublinhado*/
+}
+a:hover
+{
+	text-decoration: underline;
+}
 header#cabecalho img#icone
 {
 	position: absolute;
@@ -118,9 +126,125 @@ nav#menu h1
 nav#menu a
 {
 	color: black;
-	text-decoration:none;/*tira o sublinhado*/
+	
 }
 nav#menu a:hover
 {
 	color: white;
+}
+
+section#corpo
+{
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px; /*faz com que o texto não fique grudado na borda lateral*/
+}
+article#noticia-principal h2
+{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;/*em cima, direita, embaixo e esquerda*/
+	margin: 10px 0px 10px 0px;
+}
+header#cabecalho-do-artigo h1
+{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabecalho-do-artigo h2
+{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin:0px;
+}
+.direita
+{
+	text-align: right;
+}
+header#cabecalho-do-artigo h3
+{
+	font-size: 12pt;
+	color: #606060;
+
+}
+table#tabelaspec
+{
+	border:1px solid #606060;
+	border-spacing: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin left e right centralizam a tabela dentro da section*/
+}
+table#tabelaspec td
+{
+	border:1px solid #606060;
+	padding: 10px;/*mais espaço dentro de cada célula da tabela. Padding é o espaço interno de cada objeto*/
+}
+
+table#tabelaspec td.ce 
+{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+table#tabelaspec td.cd
+{
+	background-color: #cecece;
+}
+table#tabelaspec caption
+{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+table#tabelaspec caption span
+{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+aside#lateral
+{
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);/* deslocamento lateral e vertical, espalhamento e a cor preto com 50% de transparencia*/
+}
+aside#lateral h1
+{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+aside#lateral h2
+{
+	background-color: #606060;
+	font-size:13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+footer#rodape
+{
+	/*como eu tenho um corpo flutando à esquerda e a lateral flutuando à direita terei que limpar essa configuração,
+	 ou seja, a divisão que foi feita. O clear vai fazer com que o rodapé apareça fora da divisão direita/esquerda*/
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p
+{
+	text-align: center;
 }
