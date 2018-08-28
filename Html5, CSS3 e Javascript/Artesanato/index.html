@@ -11,26 +11,77 @@
 	</head>
 
 	<body>
+	
+		<!--<input type="checkbox" id="check">
+		<label for="check">&#9776;</label> -->
+	
 		<div id="principal">
 			<header id="cabecalho">
 				<h1> Artesanato Ouro Preto</h1>
 				<h2> Os melhores trabalhos artesanias de Minas Gerais</h2>
 			
+					
 			<nav id="menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="">Locais</a></li>
-					<li><a href="">Tipos de Trabalho</a></li>
+					<li>
+						<a href="#">Locais</a>
+						<ul>
+							<li><a href = "#">Feira de pedra sabão</a></li>
+							<li><a href = "#">Lions Clube</a></li>							
+						</ul>
+					</li>
+					<li>
+						<a href="#">Tipos de Trabalho</a>
+						<ul id="sub">
+							<li><a href = "#">Ponto Cruz</a></li>
+							<li><a href = "#">Pintura</a></li>
+							<li><a href = "#">Esculturas</a></li>
+							<li><a href = "#">Crochê</a></li>
+						</ul>
+					</li>
+					
 					<li><a href="">Fotos</a></li>
 					<li><a href="">Fale Conosco</a></li>
 					<li><a href="">Sobre</a></li>
-				</ul>
+				</ul>				
+			</nav>				
+			</header>			
+			
+			<div id="data">
+				<script>
+					dayName = new Array ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
+					monName = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto", "Setembro","Outubro", "Novembro", "Dezembro")
+					now = new Date					
+					document.write ("<h5> " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </h5>")
+				</script>
+			</div>
+			
+			<div id="conteudo">
+				<h1> Saiba tudo sobre o Artesanato de Ouro Preto, MG</h1>
+				<h2> por Marina Neri</h2>
+				<h5> Atualizado em Agosto/2018</h5>
 				
-			</nav>
-				
-			</header>
+				<h2> O que é</h2>		
+			</div>
+			
+			
 		</div>
-
+		
+		<!--<footer>
+			<div id= "footer_container">
+				<p id="contentCopyright"> &copy; Copyright 2018 - Marina Neri <br>  Desenvolvido pela Marina Neri</p>
+				<ul id="redesSociais">
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">LinkedIn</a></li>				
+				</ul>
+			</div>
+		
+		</footer>-->
+		
+		
+		
 
 
 	</body>
