@@ -10,7 +10,15 @@ body
 	background-color: #ac3973;
 	color: rgba(0,0,0,1);
 }
-
+p
+{
+	text-indent: 25px;/* criação do parágrafo*/
+	text-align: justify;
+}
+a
+{
+	text-decoration: none; /*tira o sublinhado dos links*/
+}
 #principal
 {
 	width: 1100px;
@@ -76,7 +84,6 @@ body
 
 #menu a
 {
-	text-decoration: none;
 	color: #ffffff;
 }
 #menu a:hover
@@ -121,20 +128,19 @@ body
 }
 
 /*--- CONTEÚDO ---*/
-#conteudo
+#cabecalho-do-artigo
 {
-	width: 750px;
+	width: 650px;
 	border-bottom: 1px solid #606060;
-	border-right:1px solid #606060;
 }
 
-#conteudo h1
+#cabecalho-do-artigo h1
 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 15pt;
 	margin-top:50px;
 }
-#conteudo h2
+#cabecalho-do-artigo h2
 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 12pt;
@@ -142,17 +148,93 @@ body
 	color: #8c8c8c;
 	
 }
-#conteudo h5
+#cabecalho-do-artigo h5
 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 10pt;
 	font-style: italic;
 	color: #8c8c8c;
-	padding-left:550px;
-		
+	padding-left:450px;		
 }
 
-
+#noticias-artigo
+{
+	display: block;
+	width: 600px;
+}
+#noticias-artigo p
+{
+	font-family: 'Poppins', sans-serif;
+	margin-top: 25px;
+}
+/*--- FORMATAÇÃO DE IMAGEM COM LEGENDA ---*/
+.foto-legenda
+{
+	position: relative;
+	border:8px solid white;
+	box-shadow:1px 1px 4px black ;/*vertical, horizontal*/
+	width: 250px;
+	margin-top: 25px;
+}
+.foto-legenda img
+{
+	width: 100%;
+	height: 100%;
+}
+.foto-legenda figcaption
+{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color:rgba(230, 230, 255,.4);/*transparencia de .4. Último valor do rgba é o nivel de transparência*/
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: opacity 1s; 
+}
+.foto-legenda figcaption h3
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	text-shadow: 2px 2px #000000;
+	color: #ffffff;
+	background-color: #bb99ff;
+	text-align: center;
+	margin-top: 75px;
+}
+.foto-legenda figcaption:hover
+{
+	opacity: 1;
+}
+/*--- FORMATAÇÃO DO RODA PÉ ---*/
+#rodape
+{
+	display: block;
+	background-color: #ffccff;
+	margin-top: 35px;
+	border-bottom: 9px solid #ac3973;
+}
+#rodape p
+{
+	font-family: 'Poppins', sans-serif;
+	text-align: justify;
+	padding: 20px; /*controla o espaçamento dentro do objeto.*/
+	padding-left: 90px;
+}
+#redesSociais ul
+{
+	list-style: none; 
+	position: absolute; /* para que o bloco passe por cima do documento. Posso colocar em qualquer lugar do site.
+	 Já na posição relativa fica preso no container.*/
+	 bottom: -65px;
+	 right: 250px;
+	
+}
+#redesSociais li
+{
+	display: inline-block;
+	margin: 2px; /*O margin controla o espaçamento fora do objeto, ou melhor, entre objetos*/
+}
 
 /*--- SITE RESPONSIVO ---*/
 @media screen and (max-width: 2000px)
