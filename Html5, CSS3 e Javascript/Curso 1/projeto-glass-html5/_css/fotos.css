@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+
+ul#albumFotos
+{
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+
+ul#albumFotos li
+{
+	float: left;/*cada foto fica a esquerda do outro, ou seja, um do lado do outro*/
+	width: 200px;
+	height: 200px; 
+	/*isso (hxw) gera um quardo de 200 pixel por 200pixels para cada um dos itens*/
+	margin: 10px;
+	border:5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);/* deslacemento lateral, vertical e espalhamento*/
+	transition: all .4s ease-in; /*faz com que o zoom seja mais suave*/
+}
+
+
+ul#albumFotos li span
+{
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;/*fará com que a legenda desça*/
+	padding: 5px;
+}
+
+ul#albumFotos li:hover/*muda só o li*/
+{
+	transform: scale(1.5);/*responsavel pelo zoom da li*/
+}
+ul#albumFotos li:hover span
+{
+	opacity: 1;
+}
+ul#albumFotos li#foto1
+{
+	background:url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#albumFotos li#foto1:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}
+ul#albumFotos li#foto2
+{
+	background:url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#albumFotos li#foto2:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}
+ul#albumFotos li#foto3
+{
+	background:url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#albumFotos li#foto3:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}
+
+ul#albumFotos li#foto4
+{
+	background:url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#albumFotos li#foto4:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}
+ul#albumFotos li#foto5
+{
+	background:url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#albumFotos li#foto5:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}
+ul#albumFotos li#foto6
+{
+	background:url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%; /*50% na lateral e 50% na vertical*/
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#albumFotos li#foto6:hover 
+{
+	background-position: 0px 0px;/* Mostra a parte de cima da tela, ou seja, a parte de cima da imagem*/
+	background-size: 200px 200px;
+
+}

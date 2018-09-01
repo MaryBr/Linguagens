@@ -19,16 +19,16 @@
 				 	<h2>A revolução do Google está chegando </h2>
 				</hgroup>
 
-				<img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+				<img id="icone" src="_imagens/especificacoes.png">
 
 				<nav id="menu"> <!--NAV - area de navegação --> 
 					<h1>Menu Principal</h1>
 					<ul>
-						<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html"> Home</a></li> 
-						<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html"> Especificações</a></li>
-						<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html"> Fotos</a></li>
-						<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html"> Multimídia</a></li>
-						<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
+						<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html"> Home</a></li> 
+						<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html"> Especificações</a></li>
+						<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html"> Fotos</a></li>
+						<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html"> Multimídia</a></li>
+						<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html"> Fale conosco</a></li>
 						
 					</ul>
 				</nav>
@@ -46,7 +46,13 @@
 
 				<p> Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 				<section id="conteudo">
-					<img src="_imagens/glass-esquema-marcado.jpg"/>
+					<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" />
+					<map name="meumapa"> <!-- mapa de imagens-->
+						<area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"> <!-- area retangular. Primeiro pego as coordenadas da imagem, e por ultimo eu seleciono o arquivo que quero abrir aissim que o usuário clicar ou passar o mous por cima da área que foi delimitada. -->
+						<area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" />
+						<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" />
+						<area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" />
+					</map>
 					<iframe src="google-glass.html" name="janela" id="frame-spec" scrolling="no"></iframe>
 					
 				</section>
