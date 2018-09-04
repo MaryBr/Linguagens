@@ -202,18 +202,24 @@ a
 	font-size: 14pt;
 	margin-top:25px;
 	margin-bottom: 5px;
+	color: #000000;
 	
 }
 #lateral p
 {
 	font-family: 'Poppins', sans-serif;
 	margin: 20px 6px 30px 6px; /*cima, direita, baixo, esquerda*/
+	color: #000000;
 }
 #lateral img
 {
 	margin: 0px 0px 5px 65px;
+	border-radius: 5px;	
 }
-
+#lateral p:hover, #lateral h2:hover
+{
+	text-decoration: underline;
+}
 /*--- FORMATAÇÃO DO VÍDEO ---*/
 
 #video p 
@@ -241,7 +247,7 @@ a
 #rodape p
 {
 	/*font-family: 'Poppins', sans-serif;*/
-	text-align: justify;
+	text-align: left;
 	color: #666699;
 	padding: 20px; /*controla o espaçamento dentro do objeto.*/
 	padding-left: 150px;
@@ -250,17 +256,14 @@ a
 {
 	list-style: none; 
 	position: absolute; /* para que o bloco passe por cima do documento. Posso colocar em qualquer lugar do site.
-	 Já na posição relativa fica preso no container.*/
-	 bottom: 0px;
-	 right: 250px;
-	 /*margin-right:90px;
-	 margin-bottom:-350px;*/
+	 Já na posição relativa fica preso no container.*/	 	
 	
 }
 #redesSociais li
 {
 	display: inline-block;
 	margin: 2px; /*O margin controla o espaçamento fora do objeto*/
+	
 }
 
 /*--- SITE RESPONSIVO ---*/
