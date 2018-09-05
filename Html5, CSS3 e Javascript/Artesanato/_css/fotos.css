@@ -75,21 +75,60 @@
 	transform: scale(1.1);/*responsavel pelo zoom da li*/
 }
 /* --- GALERIA ---*/
-.previa
+
+/* The grid: Four equal columns that floats next to each other */
+.coluna 
 {
-	width: 680px;
-	height:470px;
+    float: left;
+    width: 22%;
+    padding: 10px;
 }
-.galeria
+/* Style the images inside the grid */
+.coluna img 
 {
-	width: 250px;
-	margin-right: 3px;
+    opacity: 0.8; 
+    cursor: pointer; 
 }
-.foto
+
+.coluna img:hover 
 {
-	border:2px solid #000000;
+    opacity: 1;
 }
-.selecionada
+
+/* Clear floats after the columns */
+.linha:after 
 {
-	border:3px solid #ff0000;
+    content: "";
+    display: table;
+    clear: both;
+}
+/* local que a imagem expandida ficará*/
+.container 
+{
+    position: relative;
+    display: none;
+}
+/* Legenda da imagem */
+#imgtext 
+{
+    position: absolute;
+   /* bottom: 15px;
+    left: 165px;*/
+    top:0px;
+    color: #732673;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    background-color: white;
+}
+
+/* Closable button inside the expanded image */
+.closebtn 
+{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
