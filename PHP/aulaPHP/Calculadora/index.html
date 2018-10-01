@@ -1,44 +1,28 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
 	<head>
-	<meta charset="utf-8">
-	<title>Calculadora HTML CSS e PHP</title>
-	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	    <link rel="stylesheet" href="_css/estiloT.css"/>
+	    <meta charset="UTF-8"/>
+	    <title>Calculadora php </title>
 	</head>
 	<body>
-		<div id="principal">
-			<p>Calculadora Html, Css e PHP</p>
-			<section id="teclas">
-					
-				<form method="get" action="calculadora.php">
-					<input type="text" id="visor">
+		<div>
+			<form method="post" action="calculadora.php">
+				Numero 1: <input type="number" name="num1">
 				
-					<input type="submit" class="col1" value="7" name="numero[]">
-					<input type="submit" class="col1" value="4" name="numero[]">
-					<input type="submit" class="col1" value="1" name="numero[]">
-					<input type="submit" class="col1" value="0" name="numero[]">
+				<select name="operador">
+					<option value='+'>Soma</option>
+		            <option value='-'>Subtração</option>
+		            <option value='*'>Multiplicação</option>
+		            <option value='/'>Divisão</option>					
+				</select>	
+
+				<br/>Numero 2: <input type="number" name="num2"> <br/>
 				
-					<input type="submit" class="col2" value="8" name="numero[]">
-					<input type="submit" class="col2" value="5" name="numero[]">
-					<input type="submit" class="col2" value="2" name="numero[]">
-					<input type="submit" class="col2" value="." name="numero[]">
-				
-					<input type="submit" class="col3" value="9" name="numero[]">	
-					<input type="submit" class="col3" value="6" name="numero[]">	
-					<input type="submit" class="col3" value="3" name="numero[]">	
-					<input type="submit" class="col3" value="=" name="operador">				
-				
-					<input type="submit" class="col4" value="/" name="operador">
-					<input type="submit" class="col4" value="*" name="operador">
-					<input type="submit" class="col4" value="-" name="operador">
-					<input type="submit" class="col4" value="+" name="operador">				
-			
-				</form>
-				
-			</section>
-		
-		</div>	
+				<input type="submit" value="Calcular" name="resultado">
+			</form>
+
+		</div>
 	</body>
 </html>
+ 
