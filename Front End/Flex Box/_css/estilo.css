@@ -1,0 +1,42 @@
+.container
+{
+	background-color: #ccc;
+	height: 500px;
+	display: flex; /**/
+	flex-direction: row;/*define a direção dos items (linha (alinhamento vertical), coluna (alinhamento horizontal)...)*/
+	flex-wrap: wrap; /*define se terá quebra de linha ou não*/
+	/*flex-flow: row nowrap;  é a forma resumida do flex direction e flex wrap*/
+	justify-content: flex-start;/*serve para fazer um alinhamento horizonral.  O flex-start alinha da esquerda para direita*/
+	align-items: stretch;/*Alinhamento vertical. Stretch define que os itens cresçam igualmente*/
+	align-content: flex-start;/*Alinhamente vertical quando os itens tiverem uma quebra*/
+}
+.item
+{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin: 5px;
+	/*width: 30px;*/
+	height: 30px;
+	flex-grow: 1;/*modificando o valor, isso com que todos os itens tenham a mesma largura. Flex gro está relacionado á largura*/
+	flex-basis: 20;/*largura inical dos itens*/
+	flex-shrink: 1;/*capacidade de redução do item*/
+	/*flex é a forma resumida do grow, basis e shrink*/
+}
+.article-01
+{
+	flex-grow:  3;*//*ocupar x vezes mais espaço do que os outros itens*/
+}
+.article-02
+{
+	/*order: 1;*/
+	align-self: auto;/* o auto respeita a confirguração feita anteriormente no align-items no container*/
+}
+.article-03
+{
+	/*order: 2;*/
+}
+.article-04
+{
+	/*order: 4;*/
+}
