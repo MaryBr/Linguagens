@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#principal
+{
+	background-color:#ecc6c6;
+	width: 300px;
+	height:350px;
+	margin-top: 150px;
+	margin-left:500px;
+}
+p{
+	padding-top:20px;
+	padding-left: 30px;
+	font-style: italic;
+}
+#teclas
+{
+	position:relative;
+	margin-left:45px; /*centraliza as teclas*/
+	bottom: 170px;
+}
+#visor
+{
+	position:relative;
+	top: 200px;
+	left: 10px;
+	width: 190px;
+	height: 35px;
+}
+.col1, .col2, .col3, .col4 
+{
+	display: block;
+	width: 45px;
+	height: 45px;
+	margin:10px;
+	padding:10px;
+	
+}
+.col1{
+	position:relative;
+	top: 200px;
+
+}
+.col2{
+	position:relative;
+	margin-left:60px;
+	bottom: 20px;
+}
+.col3{
+	position:relative;
+	margin-left:110px;
+	bottom: 240px;
+}
+.col4{
+	position:relative;
+	margin-left:160px;
+	bottom: 460px;	
+}
